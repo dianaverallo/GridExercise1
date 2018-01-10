@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:customRenderer="clr-namespace:GridExercise1.CustomRenderer;assembly=GridExercise1"
+             x:Class="GridExercise1.MainPage" Title="Exercise1" BackgroundColor="#354242">
+
+    <Grid  Padding = "40" RowSpacing = "10" ColumnSpacing = "10" >
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Label Text="1234" Grid.Row="0" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" HorizontalOptions="Center" VerticalOptions="Center"  TextColor="White"
+               FontSize="50" Grid.ColumnSpan="3" />
+        <customRenderer:CustomButton Text = "1" Grid.Row="1" Grid.Column="0"  FontSize="30" TextColor = "#28282c" BackgroundColor = "#fff" BorderRadius = "30" />
+        <customRenderer:CustomButton  Text = "2" Grid.Row="1" Grid.Column="1"  FontSize="30" TextColor = "#28282c" BackgroundColor = "#fff" BorderRadius = "30" />
+        <customRenderer:CustomButton  Text = "3" Grid.Row="1" Grid.Column="2"  FontSize="30" TextColor = "#28282c" BackgroundColor = "#fff" BorderRadius = "30" />
+        <customRenderer:CustomButton  Text = "4" Grid.Row="2" Grid.Column="0"  FontSize="30" TextColor = "#28282c" BackgroundColor = "#fff" BorderRadius = "30" />
+        <customRenderer:CustomButton  Text = "5" Grid.Row="2" Grid.Column="1"  FontSize="30" TextColor = "#28282c" BackgroundColor = "#fff" BorderRadius = "30" />
+        <customRenderer:CustomButton  Text = "6" Grid.Row="2" Grid.Column="2"  FontSize="30" TextColor = "#28282c" BackgroundColor = "#fff" BorderRadius = "30" />
+        <customRenderer:CustomButton  Text = "7" Grid.Row="3" Grid.Column="0"  FontSize="30" TextColor = "#28282c" BackgroundColor = "#fff" BorderRadius = "30" />
+        <customRenderer:CustomButton  Text = "8" Grid.Row="3" Grid.Column="1"  FontSize="30" TextColor = "#28282c" BackgroundColor = "#fff" BorderRadius = "30" />
+        <customRenderer:CustomButton  Text = "9" Grid.Row="3" Grid.Column="2"  FontSize="30" TextColor = "#28282c" BackgroundColor = "#fff" BorderRadius = "30" />
+        <customRenderer:CustomButton  Text = "0" Grid.Row="4" Grid.Column="1"  FontSize="30" TextColor = "#28282c" BackgroundColor = "#fff" BorderRadius = "30" />
+        <customRenderer:CustomButton  Text = "Dial" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="3" FontSize="30" TextColor = "#28282c" BackgroundColor = "#96ca2d"  BorderRadius = "30" />
+
+    </Grid>
+
+</ContentPage>
